@@ -4,6 +4,9 @@
 	Date created: 25/09/2016
 	Date last modified: 25/12/2016
 '''
+from PersianStemmer.stemming_rule import StemmingRule
+from PersianStemmer.utils import Utils
+from PersianStemmer.verb_stem import VerbStem
 
 __author__ = 'Hossein Taghi-Zadeh'
 __email__ = "h.t.azeri@gmail.com"
@@ -12,9 +15,7 @@ from patricia import trie
 import re
 import unicodedata
 import os
-from .htz.ir.stemming.stemming_rule import StemmingRule
-from .htz.ir.stemming.verb_stem import VerbStem
-from .htz.utils import Utils
+
 
 class PersianStemmer(object):
 	lexicon = trie()
@@ -30,10 +31,10 @@ class PersianStemmer(object):
 	suffixZamir = ["م", "ت", "ش"]
 	suffixException = ["ها", "تر", "ترین", "ام", "ات", "اش"]
 	
-	PATTERN_FILE_NAME = os.path.dirname(__file__) + "\\data\\Patterns.fa"
-	VERB_FILE_NAME = os.path.dirname(__file__) + "\\data\\VerbList.fa"
-	DIC_FILE_NAME = os.path.dirname(__file__) + "\\data\\Dictionary.fa"
-	MOKASSAR_FILE_NAME = os.path.dirname(__file__) + "\\data\\Mokassar.fa"
+	PATTERN_FILE_NAME = os.path.dirname(__file__) + "/data/Patterns.fa"
+	VERB_FILE_NAME = os.path.dirname(__file__) + "/data/VerbList.fa"
+	DIC_FILE_NAME = os.path.dirname(__file__) + "/data/Dictionary.fa"
+	MOKASSAR_FILE_NAME = os.path.dirname(__file__) + "/data/Mokassar.fa"
 	patternCount = 1
 	enableCache = True
 	enableVerb = False
@@ -381,30 +382,3 @@ class PersianStemmer(object):
 					return firstStem
 
 		return lastStem
-'''
-	public final int stem(char[] s, int len) /*throws Exception*/:
-		
-		StringBuilder input = new StringBuilder()
-		for (int i=0 i< len i++):
-			input.append(s[i])
-		}		
-		String sOut = this.run(input.toString())
-		
-		if (sOut.length() > s.length)
-			s =  new char[sOut.length()]
-		for (int i=0 i< sOut.length() i++):
-			s[i] = sOut.charAt(i)
-		}			
-		/*try:
-			for (int i=0 i< Math.min(sOut.length(), s.length) i++):
-				s[i] = sOut.charAt(i)
-			}	
-		}
-		catch (Exception e):
-			throw new Exception("stem: "+sOut+" - input: "+ input.toString())
-		}*/
-		
-		return sOut.length()		
-		
-	}	
-'''
