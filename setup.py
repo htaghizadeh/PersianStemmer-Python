@@ -12,7 +12,7 @@ setup(
         description='Persian Stemmer for Python',
         author='Hossein Taghi-Zadeh',
         author_email='h.t.azeri@gmail.com',
-        url='https://github.com/MrHTZ/PersianStemmer-Python',
+        url='https://github.com/htaghizadeh/PersianStemmer-Python',
         license=license,
         package_data={'': ['data/*']},
         classifiers=[
