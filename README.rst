@@ -1,18 +1,17 @@
-# PersianStemmer-Python
+PersianStemmer-Python
 
-## Installation
+Installation:
+
 pip install PersianStemmer
 
-## Code Example
+Code Example:
 
-```python
-    import PersianStemmer
-    
-    ps = PersianStemmer()
-    println(ps.run("زیباست"))
-```
+import PersianStemmer
 
-## Citation
+ps = PersianStemmer()
+println(ps.run("زیباست"))
+
+Citation:
 If you use this software please cite the followings:
 
 Taghi-Zadeh, Hossein and Sadreddini, Mohammad Hadi and Diyanati, Mohammad Hasan and Rasekh, Amir Hossein. 2015. *A New Hybrid Stemming Method for Persian Language*. In *Digital Scholarship in the Humanities*. The Oxford University Press.
