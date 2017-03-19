@@ -6,10 +6,10 @@ pip install PersianStemmer
 ## Code Example
 
 ```python
-    import PersianStemmer
-    
-    ps = PersianStemmer()
-    println(ps.run("زیباست"))
+from PersianStemmer import PersianStemmer 
+
+ps = PersianStemmer()
+print(ps.run("زیباست"))
 ```
 
 ## Citation
