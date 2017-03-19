@@ -1,4 +1,4 @@
-from setuptools import setup
+from distutils.core import setup
 
 with open('README.rst', encoding='utf-8') as f:
     readme = f.read()
@@ -15,8 +15,16 @@ setup(
         url='https://github.com/htaghizadeh/PersianStemmer-Python',
         license=license,
         package_data={'': ['data/*']},
+        keywords=['persian','information-retrieval','nlp','morphological analysis','stemming algorithms','stemmers'],
+        packages=find_packages(),
         classifiers=[
+            'Development Status :: 5 - Production/Stable',
+            'Intended Audience :: Developers',
+            'License :: OSI Approved :: BSD License',            
             'Topic :: Text Processing',
+            'Topic :: Internet :: WWW/HTTP :: Indexing/Search',
+            'Topic :: Text Processing :: Indexing',
+            'Topic :: Text Processing :: Linguistic',
             'Natural Language :: Persian',
             'Programming Language :: Python :: 2.7',
             'Programming Language :: Python :: 3.2',
