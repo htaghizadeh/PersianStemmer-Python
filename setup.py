@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
+import codecs
 
-with open('README.md', encoding='utf-8') as f:
+with codecs.open('README.md', 'r', encoding='utf-8') as f:
     readme = f.read()
 
-with open('LICENSE', encoding='utf-8') as f:
+with codecs.open('LICENSE', 'r', encoding='utf-8') as f:
     license = f.read()
 
 setup(
