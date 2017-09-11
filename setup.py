@@ -9,7 +9,7 @@ with codecs.open('LICENSE', 'r', encoding='utf-8') as f:
 
 setup(
         name='PersianStemmer',
-        version='1.0.0',
+        version='1.0.1',
         description='Persian Stemmer for Python',
         author='Hossein Taghi-Zadeh',
         author_email='h.t.azeri@gmail.com',
@@ -27,6 +27,8 @@ setup(
             'Topic :: Text Processing :: Indexing',
             'Topic :: Text Processing :: Linguistic',
             'Natural Language :: Persian',
+            'Programming Language :: Python :: 2.5',
+            'Programming Language :: Python :: 2.6',
             'Programming Language :: Python :: 2.7',
             'Programming Language :: Python :: 3.2',
             'Programming Language :: Python :: 3.3',
