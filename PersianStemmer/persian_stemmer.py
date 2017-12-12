@@ -312,7 +312,10 @@ class PersianStemmer(object):
 						pass
 						#addToLog("", pattern + " ::" + s + "}")
 		return terminate
-
+        
+	def stem(self, input):
+		return self.run(input)
+	
 	def run(self, input):
 		input = self.normalization(input).strip()
 
