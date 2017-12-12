@@ -1,7 +1,7 @@
 # PersianStemmer-Python
 
 ## Installation
-pip install PersianStemmer
+`pip install PersianStemmer`
 
 ## Code Example
 
@@ -10,6 +10,9 @@ from PersianStemmer import PersianStemmer
 
 ps = PersianStemmer()
 print(ps.run("زیباست"))
+
+# or NLTK compatible form
+print(ps.stem("زیباست"))
 ```
 
 ## Citation
