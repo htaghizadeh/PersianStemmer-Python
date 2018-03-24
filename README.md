@@ -1,8 +1,10 @@
 # PersianStemmer-Python
 
 ## Installation
-`pip install PersianStemmer`
-`pip install https://github.com/htaghizadeh/PersianStemmer-Python/archive/master.zip --upgrade`
+```
+  pip install PersianStemmer
+  pip install https://github.com/htaghizadeh/PersianStemmer-Python/archive/master.zip --upgrade
+```
 
 ## Code Example
 
